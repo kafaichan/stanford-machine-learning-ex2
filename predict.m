@@ -15,7 +15,8 @@ p = zeros(m, 1);
 %               You should set p to a vector of 0's and 1's
 %
 
-
+% !! hx = sigmoid(X*theta) for logistic regression
+p = (sigmoid(X * theta) >= 0.5);
 
 
 
